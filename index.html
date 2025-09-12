@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindFull 🧘‍♂️ | Be Mindful, Not Mind Full</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo and Slogan -->
+            <a href="index.html" class="flex flex-col items-start">
+                <span class="text-3xl font-bold text-indigo-600 tracking-tight">MindFull 🧠</span>
+                <span class="text-sm font-medium text-gray-500">Be Mindful, Not Mind Full</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="lg:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex space-x-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Menu (hidden by default) -->
+    <div id="mobile-menu" class="lg:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-xl z-40 nav-menu pt-20">
+        <nav class="flex flex-col p-6 space-y-4">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="bg-indigo-600 text-white py-24 md:py-32 text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Your Journey to a Calmer Mind Starts Here</h1>
+                <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto mb-8">
+                    MindFull is dedicated to helping you find peace, clarity, and well-being. Explore our articles, stories, and resources.
+                </p>
+                <a href="blog.html" class="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-colors duration-300">
+                    Read the Latest Posts →
+                </a>
+            </div>
+        </section>
+
+        <!-- Box Method Navigation -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About Box -->
+                <a href="about.html" class="box-link">
+                    <svg class="w-16 h-16 text-indigo-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">About Us</h2>
+                    <p class="text-center text-gray-600">Discover our mission and the story behind MindFull.</p>
+                </a>
+                <!-- Blog Box -->
+                <a href="blog.html" class="box-link">
+                    <svg class="w-16 h-16 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.484 9.49 5 8 5c-3.314 0-6 2.686-6 6s2.686 6 6 6c1.49 0 2.832-.484 4-1.253m0 0C13.168 18.516 14.51 19 16 19c3.314 0 6-2.686 6-6s-2.686-6-6-6c-1.49 0-2.832.484-4 1.253"></path></svg>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Our Blog</h2>
+                    <p class="text-center text-gray-600">Dive into articles and practical tips for a mindful life.</p>
+                </a>
+                <!-- Contact Box -->
+                <a href="contact.html" class="box-link">
+                    <svg class="w-16 h-16 text-yellow-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2 2 0 012-2h14a2 2 0 012 2z"></path></svg>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Get in Touch</h2>
+                    <p class="text-center text-gray-600">Reach out to us with your questions and feedback.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-100 py-8 mt-auto">
+        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+              <p>&copy; 2025 MindFull. All rights reserved. ✨</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Form Validation -->
+    <script src="script.js"></script>
+</body>
+</html>

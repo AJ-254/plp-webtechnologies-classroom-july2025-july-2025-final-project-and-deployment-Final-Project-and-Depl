@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About MindFull | Be Mindful, Not Mind Full</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo and Slogan -->
+            <a href="index.html" class="flex flex-col items-start">
+                <span class="text-3xl font-bold text-indigo-600 tracking-tight">MindFull 🧠</span>
+                <span class="text-sm font-medium text-gray-500">Be Mindful, Not Mind Full</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="lg:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex space-x-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Menu (hidden by default) -->
+    <div id="mobile-menu" class="lg:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-xl z-40 nav-menu pt-20">
+        <nav class="flex flex-col p-6 space-y-4">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-16 md:py-24">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h1 class="text-4xl font-extrabold text-indigo-600 mb-6">About MindFull 🌿</h1>
+            <p class="text-xl leading-relaxed text-gray-600 mb-8">
+                MindFull was born from a simple idea: that a calmer, more present life is within reach for everyone. In a world of constant distractions and overflowing schedules, our minds can quickly become "full," leaving little room for peace and clarity. Our mission is to help you reverse that trend by offering practical advice, inspiring stories, and actionable strategies for better mental well-being.
+            </p>
+            <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Philosophy</h2>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    We believe that mental health is a journey, not a destination. It's about small, consistent steps—practicing mindfulness, setting healthy boundaries, and nurturing a positive mindset. We aim to be a supportive companion on that journey, providing a safe space to learn, grow, and connect with a community that understands. Every piece of content we create is designed to empower you to live a more balanced and fulfilling life.
+                </p>
+                <br>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">What We Do</h2>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+                    <li>Publish insightful articles and guides on mindfulness, meditation, and mental well-being.</li>
+                    <li>Share personal stories and journeys to inspire and connect our community.</li>
+                    <li>Provide practical tips and techniques you can apply in your daily life.</li>
+                    <li>Offer a supportive space for anyone on their path to a calmer, more present life.</li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Meet Our Founder</h2>
+                <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <!-- Placeholder Profile -->
+                    <div class="text-center">
+                        <img src="images/67418091copy.jpg" alt="Placeholder person" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h3 class="text-xl font-semibold text-gray-900">Juliet Asiedu</h3>
+                        <p class="text-gray-500">Founder & Writer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-100 py-8 mt-auto">
+        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+             <p>&copy; 2025 MindFull. All rights reserved. ✨</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script src="script.js"></script>
+</body>
+</html>

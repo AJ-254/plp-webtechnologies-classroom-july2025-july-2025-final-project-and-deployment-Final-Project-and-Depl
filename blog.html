@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | MindFull</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-indigo-600">MindFull 🧠</a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-indigo-600">Home</a>
+        <a href="about.html" class="hover:text-indigo-600">About</a>
+        <a href="blog.html" class="text-indigo-600 font-semibold">Blog</a>
+        <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">☰</button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-gray-100 px-4 pb-4 space-y-2 md:hidden">
+      <a href="index.html" class="block hover:text-indigo-600">Home</a>
+      <a href="about.html" class="block hover:text-indigo-600">About</a>
+      <a href="blog.html" class="block text-indigo-600 font-semibold">Blog</a>
+      <a href="contact.html" class="block hover:text-indigo-600">Contact</a>
+    </div>
+  </header>
+
+  <!-- Featured Blog Posts -->
+  <main class="flex-grow py-12 px-6">
+    <section class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10 text-gray-900">✨ Featured Blog Posts</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Meditation Blog -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition flex flex-col">
+          <img src="images/meditate.jpg" alt="Meditation" class="h-48 w-full object-cover">
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-semibold mb-3">🧘 The Power of a 5-Minute Meditation</h3>
+            <p class="text-gray-700 mb-4 flex-grow">Discover how just a few minutes of mindful breathing can reduce stress and boost focus.</p>
+            <a href="post-meditation.html" class="text-indigo-600 font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Journaling Blog -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition flex flex-col">
+          <img src="images/journal.jpg" alt="Journaling" class="h-48 w-full object-cover">
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-semibold mb-3">✍️ Journaling for Mental Clarity</h3>
+            <p class="text-gray-700 mb-4 flex-grow">Learn simple techniques to process your thoughts and improve emotional well-being.</p>
+            <a href="post-journaling.html" class="text-indigo-600 font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Placeholder Blog -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition flex flex-col">
+          <img src="images/sleep.jpg" alt="Sleep and Mental Health" class="h-48 w-full object-cover">
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-semibold mb-3">🌙 Sleep and Mental Health</h3>
+            <p class="text-gray-700 mb-4 flex-grow">Explore the powerful connection between sleep quality and your mental health.</p>
+            <a href="#" class="text-indigo-600 font-semibold hover:underline">Coming Soon →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-md py-6 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center text-gray-600">
+      <p>&copy; 2025 MindFull. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

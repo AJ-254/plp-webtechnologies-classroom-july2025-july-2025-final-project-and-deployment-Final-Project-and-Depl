@@ -29,15 +29,14 @@ This site was deployed with **Netlify**
 
 ---
 ### 🌍 Live Demo
-Visit my site will be available at:
-🔗: https://your-site-name.netlify.app
+Visit my site at:
+🔗 https://mind-full.netlify.app/
 
 ---
 ### 📸 Preview
 Homepage, Blog and other sections preview:
 <video controls width="180" height="180">
   <source src="videos/demo.mp4" type="video/mp4">
-  <p>Your browser does not support the video tag.</p>
 </video>
 
 ---

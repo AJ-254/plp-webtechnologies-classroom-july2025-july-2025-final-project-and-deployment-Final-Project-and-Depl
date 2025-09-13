@@ -34,10 +34,7 @@ Visit my site at:
 
 ---
 ### 📸 Preview
-Homepage, Blog and other sections preview:
-<video controls width="180" height="180">
-  <source src="videos/demo.mp4" type="video/mp4">
-</video>
+<img src="images/preview.png" alt="Preview of the Blog section">
 
 ---
 ### 👩‍💻 Author

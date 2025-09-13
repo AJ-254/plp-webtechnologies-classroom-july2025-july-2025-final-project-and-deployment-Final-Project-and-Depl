@@ -34,6 +34,7 @@ Visit my site at:
 
 ---
 ### 📸 Preview
+<img src="images/preview2.png" alt="Preview of the Home section">
 <img src="images/preview.png" alt="Preview of the Blog section">
 
 ---

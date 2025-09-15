@@ -1,16 +1,21 @@
-// script.js
+// Mobile Menu Functionality
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
 
-document.addEventListener('DOMContentLoaded', () => {
+if (menuToggle && mobileMenu) {
+    // Toggle open/close when clicking the hamburger button
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
 
-    // Mobile Menu Functionality
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
+    // Close the menu automatically when clicking a nav link
+    const navLinks = mobileMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
         });
-    }
+    });
+}
 
     // Contact Form Validation
     const contactForm = document.getElementById('contactForm');

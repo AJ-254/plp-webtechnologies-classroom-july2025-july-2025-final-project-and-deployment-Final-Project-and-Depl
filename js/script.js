@@ -1,19 +1,28 @@
 // Mobile Menu Functionality
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
+const navOverlay = document.getElementById('nav-overlay');
 
-if (menuToggle && mobileMenu) {
-    // Toggle open/close when clicking the hamburger button
+if (menuToggle && mobileMenu && navOverlay) {
+    // Open/close menu when clicking hamburger
     menuToggle.addEventListener('click', () => {
         mobileMenu.classList.toggle('active');
+        navOverlay.classList.toggle('active');
     });
 
-    // Close the menu automatically when clicking a nav link
+    // Close when clicking a nav link
     const navLinks = mobileMenu.querySelectorAll('a');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.remove('active');
+            navOverlay.classList.remove('active');
         });
+    });
+
+    // Close when clicking outside (overlay)
+    navOverlay.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        navOverlay.classList.remove('active');
     });
 }
 
